@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>Settore-Tessile</title>
+</head>
+ 
+<body>
+ 
+<nav class="navbar navbar-expand-lg navbar-dark">
+        
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="images/logo_white_nobg.png" alt="Logo" class="img-fluid logo-img" height="200px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+      <ul class="navbar-nav">
+
+        <li class="nav-item rimuovi_lato">
+          <a class="nav-link active" href="/" id="navbarHome" role="button">
+            HOME
+          </a>
+        </li>
+
+        <li class="nav-item dropdown rimuovi_lato">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarChisiamo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CHI SIAMO
+          </a>
+          <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarChisiamo">
+            <div class="row">              
+              <div class="col-md-4">
+                <a class="dropdown-item" href="/la-nostra-storia">La nostra storia</a>
+                <a class="dropdown-item" href="/case-history">Case History</a>
+                <a class="dropdown-item" href="/team">Il nostro team</a>
+                <a class="dropdown-item" href="/partnership">Partnership</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown rimuovi_lato">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarClienti" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            A CHI CI RIVOLGIAMO
+          </a>
+          <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarClienti">
+
+            
+            <div class="row">              
+              <div class="col-md-4">
+                <h6 class="dropdown-header">SETTORI</h6>
+                <a class="dropdown-item" href="settore-arredo.html">Arredo</a>
+                <a class="dropdown-item" href="settore-tessile.html">Tessile</a>
+                <a class="dropdown-item" href="settore-chimico.html">Chimico</a>
+                <a class="dropdown-item" href="settore-impiantistico.html">Impiantistico</a>
+                <a class="dropdown-item" href="Settore-Servizi.html">Servizi</a>
+                <a class="dropdown-item" href="Settore-Meccanico.html">Meccanico</a>
+                <a class="dropdown-item" href="Settore-Alimentare.html">Alimentare</a>
+              </div>
+              <div class="col-md-4">
+                <h6 class="dropdown-header">AZIENDE</h6>
+                <a class="dropdown-item" href="/aziende/pmi">PMI</a>
+                <a class="dropdown-item" href="/aziende/grandi-aziende">Grandi aziende</a>
+                <a class="dropdown-item" href="/aziende/studi-professionali">Studi professionali</a>
+                <a class="dropdown-item" href="/aziende/pubblica-amministrazione">PA</a>
+                <a class="dropdown-item" href="/aziende/produzione">Produzione</a>
+                <a class="dropdown-item" href="/aziende/distribuzione">Distribuzione</a>
+              </div>
+              <div class="col-md-4">
+                <h6 class="dropdown-header">FUNZIONI AZIENDALI</h6>
+                <a class="dropdown-item" href="/funzioni/amministrazione-finanza">Amministrazione e Finanza</a>
+                <a class="dropdown-item" href="/funzioni/vendite">Vendite</a>
+                <a class="dropdown-item" href="/funzioni/acquisti">Acquisti</a>
+                <a class="dropdown-item" href="/funzioni/commerciale">Commerciale</a>
+                <a class="dropdown-item" href="/funzioni/produzione">Produzione</a>
+                <a class="dropdown-item" href="/funzioni/logistica">Magazzino e Logistica</a>
+                <a class="dropdown-item" href="/funzioni/servizi">Altri servizi</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+
+        <li class="nav-item dropdown rimuovi_lato">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarSolutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SOLUZIONI
+          </a>
+          <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarSolutions">
+            <div class="row">              
+              <div class="col-md-4">
+                <h6 class="dropdown-header">GESTIONALI E AUTOMAZIONE</h6>
+                <a class="dropdown-item" href="/soluzioni/erp">ERP</a>
+                <a class="dropdown-item" href="/soluzioni/crm">CRM</a>
+                <a class="dropdown-item" href="/soluzioni/fatturazione-elettronica">Fatturazione elettronica</a>
+                <a class="dropdown-item" href="/soluzioni/archiviazione-documentale">Archiviazione documentale</a>
+                <a class="dropdown-item" href="/soluzioni/schedulazione-processi">Schedulazione processi</a>
+                <a class="dropdown-item" href="/soluzioni/mes-4-0">MES 4.0</a>
+              </div>
+              <div class="col-md-4">
+                <h6 class="dropdown-header">COMUNICAZIONE AZIENDALE</h6>
+                <a class="dropdown-item" href="/soluzioni/centralino-voip">Centralino VOIP</a>
+                <a class="dropdown-item" href="/soluzioni/fibra-connettivita">Fibra e connettività</a>
+                <a class="dropdown-item" href="/soluzioni/email-collaborazione">Email &amp; collaborazione</a>
+                <a class="dropdown-item" href="/soluzioni/domini-pec">Domini &amp; PEC</a>
+                <a class="dropdown-item" href="/soluzioni/domini-pec">Siti web &amp; hosting</a>
+              </div>
+              <div class="col-md-4">
+                <h6 class="dropdown-header">INFRASTRUTTURA E SICUREZZA</h6>
+                <a class="dropdown-item" href="/soluzioni/reti-lan-routing">Reti LAN e routing</a>
+                <a class="dropdown-item" href="/soluzioni/server-sistemi-aziendali">Server e sistemi aziendali</a>
+                <a class="dropdown-item" href="/soluzioni/workstation">Workstation</a>
+                <a class="dropdown-item" href="/soluzioni/backup-protezione-dati">Backup &amp; protezione dati</a>
+                <a class="dropdown-item" href="/soluzioni/firewall-sicurezza">Firewall &amp; sicurezza</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+         <li class="nav-item dropdown rimuovi_lato">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarProdotti" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODOTTI
+          </a>
+          <div class="dropdown-menu mega-menu p-4" aria-labelledby="navbarProdotti">
+            <div class="row">              
+              <div class="col-md-4">
+                <h6 class="dropdown-header">MICROSOFT DYNAMICS 365</h6>
+                <a class="dropdown-item" href="/prodotti/microsoft-dynamics-365#business-central">Business Central</a>
+                <a class="dropdown-item" href="/prodotti/microsoft-dynamics-365#sales">Sales</a>
+                <a class="dropdown-item" href="/prodotti/microsoft-dynamics-365#field-service">Field Service</a>
+                <a class="dropdown-item" href="/prodotti/microsoft-dynamics-365#customer-insights">Customer Insights</a>
+                <a class="dropdown-item" href="/prodotti/microsoft-dynamics-365#project-operations">Project Operations</a>
+                <h6 class="dropdown-header">MICROSOFT POWER PLATFORM</h6>
+                <a class="dropdown-item" href="/prodotti/microsoft-power-platform#apps">Power Apps</a>
+                <a class="dropdown-item" href="/prodotti/microsoft-power-platform#automate">Power Automate</a>
+                <a class="dropdown-item" href="/prodotti/microsoft-power-platform#bi">Power BI</a>
+              </div>
+              <div class="col-md-4">
+                <h6 class="dropdown-header">GESTIONE E COLLABORAZIONE</h6>
+                <a class="dropdown-item" href="/prodotti/microsoft-365">Microsoft 365</a>
+                <a class="dropdown-item" href="/prodotti/oron">Oron</a>
+                <a class="dropdown-item" href="/prodotti/adobe-creative-cloud">Adobe Creative Cloud</a>
+                <a class="dropdown-item" href="/prodotti/siemens-opcenter-aps">Siemens OPCenter APS</a>
+                <a class="dropdown-item" href="/prodotti/3cx">3CX</a>
+                <a class="dropdown-item" href="/prodotti/engrafon">Engrafon</a>
+              </div>
+                <div class="col-md-4">
+                <h6 class="dropdown-header">GESTIONE DATI</h6>
+                <a class="dropdown-item" href="/prodotti/oracle-database">Oracle Database</a>
+                <a class="dropdown-item" href="/prodotti/microsoft-sql">Microsoft SQL</a>
+                <a class="dropdown-item" href="/prodotti/veritas-backupexec">Veritas Backup Exec</a>
+                <a class="dropdown-item" href="/prodotti/veeam">Veeam</a>
+                <a class="dropdown-item" href="/prodotti/broadcom">Broadcom</a>
+                <a class="dropdown-item" href="/prodotti/norton">Norton</a>
+                <a class="dropdown-item" href="/prodotti/data-security-plus">Data Security Plus</a>
+              </div>
+              <div class="col-md-4">
+                <h6 class="dropdown-header">HARDWARE</h6>
+                <a class="dropdown-item" href="/prodotti/lenovo">Lenovo</a>
+                <a class="dropdown-item" href="/prodotti/hp">HP</a>
+                <a class="dropdown-item" href="/prodotti/epson">Epson</a>
+                <a class="dropdown-item" href="/prodotti/yealink">Yealink</a>
+                <a class="dropdown-item" href="/prodotti/snom">Snom</a>
+                <a class="dropdown-item" href="/prodotti/cisco">Cisco</a>
+                <a class="dropdown-item" href="/prodotti/windows">Windows</a>
+                <a class="dropdown-item" href="/prodotti/android">Android</a>
+                <a class="dropdown-item" href="/prodotti/linux">Linux</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item rimuovi_lato ">
+          <a class="nav-link active" href="/news" id="navbarNews" role="button">
+            NOTIZIE
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="homepageBanner" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#homepageBanner" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+      <button type="button" data-bs-target="#homepageBanner" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#homepageBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!--<div class="carousel-item active">
+        <img src="http://localhost/new2/img/cons2.png" class="d-block w-100" alt="Banner 1">
+      </div>-->
+      <div class="carousel-item active">
+        <img src="https://staging.comptech.it/assets/homepage/banner_1.jpeg" class="d-block w-100" alt="Banner 1">
+      </div>
+
+<div class="carousel-item">
+        <img src="https://staging.comptech.it/assets/homepage/Banner3.jpeg" class="d-block w-100" alt="Banner 3">
+      </div>
+      <!--<div class="carousel-item">
+        <img src="http://localhost/new2/img/banner_3.jpeg" class="d-block w-100" alt="Banner 3">
+      </div>-->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#homepageBanner" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Precedente</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homepageBanner" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Successivo</span>
+    </button>
+  </div>  
+
+  <!--<button id="darkModeToggle" class="btn btn-light mt-3 mb-3" onclick="toggleDarkMode()">🌓 Cambia tema</button>-->
+ 
+  <div class="container mt-5">
+ 
+    <div class="row">
+ 
+      <div class="col-12 col-md-9">
+        <h1>Arredo</h1>
+ 
+        <div class="col mt-3 blocco-testo">
+          <h3 class="elemento-animato da-sinistra delay-1">Dalla fibra al capo finito</h3>
+          <div class="row">
+            <div class="col-md-6 col-12 mt-3 elemento-animato da-sinistra delay-1">
+              <p>Comptech accompagna le aziende tessili lungo l’intera filiera – filatura, tessitura, tintoria, stamperia,
+                confezione e accessori – con una piattaforma ERP capace di governare processi altamente variabili e lotti
+                sempre più snelli. In uno scenario dominato da richieste su misura, tempi stretti e margini ridotti,
+                <b>Oron</b> trasforma la complessità in procedure fluide e tracciabili.
+              </p>
+            </div>
+            <div class="col-md-6 col-12 mt-3 elemento-animato da-sopra delay-1">
+              <img src="images/stabilimento-tessile.webp" class="img-fluid img-bordo-smussato mb-4" alt="Tessile" />
+            </div>
+          </div>
+          <hr class="linea-orizzontale" />
+        </div>
+ 
+        <div class="col mt-3 blocco-testo">
+          <h3 class="elemento-animato da-sinistra delay-1">Le sfide del tessile che affrontiamo ogni giorno</h3>
+          <div class="row">
+            <div class="col-md-6 col-12 mt-3 elemento-animato da-sotto delay-1">
+              <img src="images/tessere-di-settore.webp" class="img-fluid img-bordo-smussato mb-4" alt="Stilista" />
+            </div>
+            <div class="col-md-6 col-12 mt-3 elemento-animato da-sotto delay-1">
+              <ul class="lista-rombi">
+                <li>Campionari rapidi e accurati: servono prototipi con distinte tecniche complete ma facili da modificare.
+                </li>
+                <li>Variazioni continue: ogni disegno, colore o dimensione genera nuove versioni di prodotto da quotare,
+                  produrre e tracciare.</li>
+                <li>Pianificazione di fabbisogni e capacità: i calendari di tintoria e tessitura vanno sincronizzati con
+                  lavorazioni esterne e fornitori.</li>
+                <li>Confezionamento e façon: la gestione delle fasi sartoriali richiede costi e avanzamenti sempre aggiornati.
+                </li>
+                <li>Tracciabilità integrale: dal lotto di fibra al rotolo finito fino al capo, con conformità normativa
+                  garantita.</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="linea-orizzontale" />
+        </div>
+ 
+        <div class="col mt-3 blocco-testo">
+          <h3 class="elemento-animato da-sinistra delay-1">Come Oron fa la differenza</h3>
+          <div class="row">
+            <div class="col-md-6 col-12 mt-3 elemento-animato da-sopra delay-1">
+              <ol class="lista-rombi">
+                <li>Con Oron puoi creare, duplicare e adattare i campioni con facilità, mantenendo sempre allineate le
+                  versioni tecniche durante tutto il ciclo di sviluppo prodotto.</li>
+                <li>Le schede tecniche digitali centralizzano disegni, composizioni e cicli di lavorazione in un’unica
+                  anagrafica consultabile da ogni reparto.</li>
+                <li>Grazie alla pianificazione MRP, il sistema elabora i fabbisogni, rilascia le disposizioni interne o
+                  esterne e ottimizza i carichi macchina secondo la capacità reale.</li>
+                <li>Le lavorazioni sartoriali e il façon sono gestiti in tempo reale, con tracciamento continuo di
+                  tempi,
+                  resi e costi per ogni terzista coinvolto.</li>
+                <li>La variantatura dinamica genera automaticamente nuove combinazioni di disegno, colore e taglia senza
+                  moltiplicare le anagrafiche, mentre barcode e RFID garantiscono la tracciabilità completa di lotti,
+                  rotoli
+                  e pezze anche in fase di specola.</li>
+              </ol>
+            </div>
+            <div class="col-md-6 col-12 mt-3 elemento-animato da-destra delay-1 immagini-sovrapposte-container">
+              <img src="images/uomo-che-lavora-nella-macchina-da-ricamo-tessile.webp" class="img-fluid immagine1" alt="Tessere" />
+              <img src="images/arredo-ufficio.jpg" class="img-fluid immagine2" alt="Tessile Sovrapposto" />
+            </div>
+          </div>
+          <hr class="linea-orizzontale" />
+        </div>
+ 
+        <div class="col mt-3 blocco-testo">
+          <h3 class="elemento-animato da-sinistra delay-1">Punti di forza in una frase</h3>
+          <ol class="lista-rombi elemento-animato da-destra delay-1">
+            <li>Campionatura sempre sotto controllo: dal primo prototipo alla produzione, tutte le varianti restano
+              coerenti e tracciate.</li>
+            <li>Schede tecniche intelligenti collegano disegni, cicli e costi, eliminando errori di copia tra reparti.
+            </li>
+            <li>Pianificazione dei fabbisogni calcola materiali e capacità, riducendo tempi morti e urgenze in tintoria
+              o tessitura.</li>
+            <li>Gestione integrata di lavorazioni interne ed esterne, compreso il façon, con costi aggiornati in tempo
+              reale.</li>
+            <li>Logistica di magazzino evoluta: lotti, pezze e ordini sono sempre rintracciabili grazie a barcode,
+              ubicazioni e specola digitale.</li>
+          </ol>
+          <hr class="linea-orizzontale" />
+        </div>
+ 
+        <div class="col mt-3 blocco-testo">
+          <h3 class="elemento-animato da-sinistra delay-1">Risultato: più controllo, meno sprechi</h3>
+          <p class="elemento-animato da-destra delay-1">Con Oron, ogni passaggio – dalla fibra al capo finito – diventa un flusso digitale unico: decisioni rapide,
+            margini protetti e clienti serviti puntualmente. Vuoi vedere come funziona sul tuo shop-floor? Contattaci e
+            prenota una demo dedicata al tessile.</p>
+          <hr class="linea-orizzontale" />
+        </div>
+ 
+        <!-- CARD CON CONTATTI -->
+        <div class="row mt-5 mb-5">
+          <div class="col-md-4 mb-4">
+            <div class="card contact-card elemento-animato da-sotto delay-1">
+              <div class="card-body">
+                <h5 class="card-title">Inserisci Email</h5>
+                <div class="contact-icon">✉️</div>
+                <input type="email" class="form-control" placeholder="esempio@email.com" />
+                <button class="btn btn-primary mt-3">Invia</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card contact-card elemento-animato da-sotto delay-2">
+              <div class="card-body">
+                <h5 class="card-title">Inserisci Indirizzo</h5>
+                <div class="contact-icon">📍</div>
+                <input type="text" class="form-control" placeholder="Via Roma 123, Città" />
+                <button class="btn btn-primary mt-3">Invia</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card contact-card elemento-animato da-sotto delay-3">
+              <div class="card-body">
+                <h5 class="card-title">Inserisci Numero di Telefono</h5>
+                <div class="contact-icon">📞</div>
+                <input type="tel" class="form-control" placeholder="+39 123 456 7890" />
+                <button class="btn btn-primary mt-3">Invia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <div class="col-12 col-md-3 ">
+        <div class="linea-divisoria-sx mb-3">
+          <h5>Risorse utili</h5>
+          <ul class="lista-bordo sidebar-links">
+            <li><a href="#">Documentazione tecnica</a></li>
+            <li><a href="#">Manuale utente</a></li>
+            <li><a href="#">Scheda prodotto A</a></li>
+            <li><a href="#">Scheda prodotto B</a></li>
+            <li><a href="#">Certificazioni</a></li>
+            <li><a href="#">FAQ settore alimentare</a></li>
+          </ul>
+        </div>
+ 
+        <div class="linea-divisoria-sx mb-3">
+          <h5>Link rapidi</h5>
+          <ul class="lista-bordo sidebar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#chi-siamo">Chi siamo</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+            <li><a href="#">Mappa del sito</a></li>
+          </ul>
+        </div>
+ 
+        <div class="linea-divisoria-sx mb-3">
+          <h5>Altri settori</h5>
+          <ul class="lista-bordo sidebar-links">
+            <li><a href="#">Logistica</a></li>
+            <li><a href="#">Manifatturiero</a></li>
+            <li><a href="#">Chimico/Farmaceutico</a></li>
+            <li><a href="#">Retail e Distribuzione</a></li>
+            <li><a href="#">Altro</a></li>
+          </ul>
+        </div>
+      </div>
+ 
+    </div>
+ 
+  </div>
+
+      <footer class="py-5">
+  <div class="container">
+    <div class="row">
+      
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Footer</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Footer</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Footer</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Footer</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Footer</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Footer</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white footer-link">Link di test</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 mt-4 border-top">
+      <div class="mb-3 mb-sm-0">
+        <p class="mb-0">©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>2025 Comptech S.r.l.
+        </p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="px-2">
+          <a href="/contatti#generali" class="text-white footer-link">Contatti</a>
+        </div>
+        <div class="px-2">
+          <a href="/contatti#form" class="text-white footer-link">Indirizzo</a>
+        </div>
+        <div class="px-2">
+          <a href="/cookie" class="text-white footer-link">Preferenze cookie</a>
+        </div>
+        <div class="px-2">
+          <a href="/privacy" class="text-white footer-link">Informativa sulla privacy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 mt-4 border-top">
+      <div class="mb-3 mb-sm-0">
+        <p class="mb-0">
+          PIVA 01287570137 - Codice fiscale 01287570137 - Capitale sociale €99.840,00 i.v. - Iscritta al registro delle imprese di Como numero CO-179703
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+</script>
+
+ 
+  <script src="script.js"></script>
+</body>
+ 
+</html>

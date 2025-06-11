@@ -1,0 +1,507 @@
+:root {
+  --colore-primario: #01416e;
+  --colore-hover: #69c2ff;
+  --colore-chiaro: #f5f9fe;
+  --raggio-bordo: 0.4rem;
+  --ombreggiatura-leggera: 0 1px 6px rgb(1 65 110 / 0.2);
+  --font-weight-bold: 700;
+  --font-family: "Poppins", sans-serif;
+  --font-size-lg: 1.4rem;
+}
+ 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-size: 1rem;
+  color: var(--colore-primario);
+  background-color: var(--colore-chiaro);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0 1rem;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+}
+ 
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+ 
+h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: 1rem;
+  color: var(--colore-primario);
+}
+ 
+/* Linea orizzontale animata */
+.linea-orizzontale {
+  border: none;
+  border-bottom: 3px solid var(--colore-primario);
+  margin: 2rem 0;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  height: 3px;
+  max-width: 100%;
+}
+ 
+.linea-orizzontale.attivo {
+  opacity: 0.6;
+  transform: scaleX(1);
+}
+ 
+/* In dark mode linea orizzontale bianca */
+body.dark-mode .linea-orizzontale {
+  border-color: #fff;
+}
+ 
+/* Sovrapposizione immagini */
+.immagini-sovrapposte-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 350px;
+}
+ 
+.immagini-sovrapposte-container .immagine1 {
+  width: 60%;
+  height: 100%;
+  border-radius: var(--raggio-bordo);
+  box-shadow: var(--ombreggiatura-leggera);
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+ 
+.immagini-sovrapposte-container .immagine2 {
+  width: 50%;
+  height: 80%;
+  border-radius: var(--raggio-bordo);
+  box-shadow: var(--ombreggiatura-leggera);
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 3px solid var(--colore-primario);
+  z-index: 2;
+  transform: translate(10%, 10%);
+}
+
+.img-bordo-smussato {
+  border-radius: var(--raggio-bordo);
+  box-shadow: var(--ombreggiatura-leggera);
+  object-fit: cover;
+  z-index: 1;
+}
+ 
+/* Card contatto */
+.contact-card {
+  background-color: var(--colore-chiaro);
+  border-radius: var(--raggio-bordo);
+  box-shadow: var(--ombreggiatura-leggera);
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.4s ease;
+}
+ 
+.contact-card:hover {
+  box-shadow: 0 6px 15px rgba(1, 65, 110, 0.3);
+  transform: translateY(-8px);
+}
+ 
+.contact-card h5 {
+  color: var(--colore-primario);
+  margin-bottom: 1rem;
+}
+ 
+.contact-card input.form-control {
+  border-radius: var(--raggio-bordo);
+  border: 1px solid var(--colore-primario);
+  transition: border-color 0.3s ease;
+}
+ 
+.contact-card input.form-control:focus {
+  border-color: var(--colore-hover);
+  box-shadow: 0 0 5px var(--colore-hover);
+  outline: none;
+}
+ 
+/* Dark mode */
+body.dark-mode {
+  background-color: #262626;
+  color: #fff;
+}
+ 
+body.dark-mode h3,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h4,
+body.dark-mode h5 {
+  color: #81cfff;
+}
+ 
+body.dark-mode .contact-card {
+  background-color: #2b2a2a;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+ 
+body.dark-mode .contact-card input.form-control {
+  background-color: #262626;
+  border-color: #81cfff;
+  color: #fff;
+}
+ 
+body.dark-mode .contact-card input.form-control:focus {
+  border-color: #b8e2ff;
+  box-shadow: 0 0 5px #b8e2ff;
+  color: #fff;
+}
+ 
+/* Animazioni elementi */
+.elemento-animato {
+  opacity: 0;
+  transition: all 0.7s ease;
+  position: relative;
+}
+ 
+.elemento-animato.attivo {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+ 
+/* Direzioni di partenza */
+.da-sinistra {
+  transform: translateX(-50px);
+}
+ 
+.da-destra {
+  transform: translateX(50px);
+}
+ 
+.da-sopra {
+  transform: translateY(-50px);
+}
+ 
+.da-sotto {
+  transform: translateY(50px);
+}
+ 
+/* Delay animazioni */
+.delay-1 {
+  transition-delay: 0.3s;
+}
+ 
+.delay-2 {
+  transition-delay: 0.6s;
+}
+ 
+.delay-3 {
+  transition-delay: 0.9s;
+}
+ 
+/* Sidebar modificata per elenco puntato senza linea verticale */
+/* Sfondo bianco, testo nero, anche in dark mode */
+ 
+.linea-divisoria-sx {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: none; /* togli linea verticale */
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: var(--ombreggiatura-leggera);
+}
+ 
+/* Lista con pallini */
+.lista-bordo {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+ 
+.lista-bordo li {
+  margin-bottom: 0.5rem;
+}
+ 
+.lista-bordo li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 0.2rem 0;
+  font-weight: var(--font-weight-bold);
+  transition: color 0.3s ease;
+}
+ 
+.lista-bordo li a:hover {
+  color: var(--colore-hover);
+  text-decoration: underline;
+}
+ 
+/* Forza colori anche in dark mode */
+body.dark-mode .linea-divisoria-sx {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-left: none !important;
+  box-shadow: var(--ombreggiatura-leggera) !important;
+}
+ 
+body.dark-mode .linea-divisoria-sx ul.lista-bordo li a {
+  color: #000 !important;
+}
+ 
+/* Bottone cambio tema */
+#darkModeToggle.btn-light {
+  color: var(--colore-primario);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: var(--raggio-bordo);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+ 
+#darkModeToggle.btn-light:hover {
+  background-color: var(--colore-hover);
+  color: #fff;
+}
+ 
+#darkModeToggle.btn-dark {
+  color: #fff;
+  background-color: var(--colore-primario);
+  border: 1px solid var(--colore-primario);
+  padding: 0.5rem 1rem;
+  border-radius: var(--raggio-bordo);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+ 
+#darkModeToggle.btn-dark:hover {
+  background-color: var(--colore-hover);
+  border-color: var(--colore-hover);
+}
+
+/* Font moderno da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa !important;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #01416e;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 4px solid #01416e;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.rimuovi_lato{
+    border-left: 4px solid transparent;
+}
+
+li::marker{
+    color: #01416e;
+}
+
+/* Immagine */
+.img-fluid {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+/* Navbar e Footer - stessi colori */
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    background-color: transparent !important;
+    color: white;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1020;
+}
+
+.navbar.scrolled,
+.navbar:hover {
+    background-color: rgb(1, 65, 110) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.navbar-dark .nav-link {
+    color: #fff !important;
+}
+
+/* Nav items trasparenti di base */
+.nav-item {
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Nav items con sfondo pieno quando navbar scrolled o hover */
+.navbar.scrolled .nav-item,
+.navbar:hover .nav-item {
+    background-color: rgb(1, 65, 110);
+}
+
+/* Nav item hover singolo */
+.nav-item:hover {
+    background-color: rgb(1, 65, 110);
+}
+
+/* Dropdown menu */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Se vuoi aggiungere padding al footer */
+footer {
+    background-color: rgb(1, 65, 110);
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-6, .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .img-fluid {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.content-box {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo-img {
+    height: auto;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.dropdown-menu.mega-menu .dropdown-header {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* Mega‐menu assoluto e centrato orizzontalmente */
+.dropdown-menu.mega-menu {
+    position: absolute !important;
+    top: 100%; /* subito sotto la navbar */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 800px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-header {
+    color: #00406e !important;
+}
+
+#homepageBanner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: 1;
+    pointer-events: none;
+}
+
+#homepageBanner {
+    position: relative;
+}
+
+#homepageBanner .carousel-item {
+    max-height: 65vh;
+    overflow: hidden;
+}
+
+#homepageBanner .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-img {
+    height: 70px;
+} 
